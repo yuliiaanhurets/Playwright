@@ -27,11 +27,9 @@ async function getMultiplicationInt(sum) {
 }
 
 getRandomInt(10, 100).then((randomValue) => {
-    getSumInt(randomValue);
-    return randomValue;
-}).then((sum) => {
-    getMultiplicationInt(sum);
-    return sum;
+    return getSumInt(randomValue);
+}).then((sum) => {;
+    return getMultiplicationInt(sum);
 }).then((result) => {
     console.log(result);
 });
