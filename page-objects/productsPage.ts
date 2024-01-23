@@ -10,6 +10,7 @@ export class ProductsPage {
     readonly itemImage: Locator;
     readonly inventoryItemName: Locator;
     readonly inventoryItemDesc: Locator;
+    readonly tshirtAddToBagButton: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -21,5 +22,6 @@ export class ProductsPage {
         this.itemImage = page.locator('#item_4_img_link');
         this.inventoryItemName = page.locator('//div[@class="inventory_item_name"]');
         this.inventoryItemDesc = page.locator('//div[@class="inventory_item_desc"]');
+        this.tshirtAddToBagButton = page.locator('#add-to-cart-sauce-labs-bolt-t-shirt');
     }
 }
